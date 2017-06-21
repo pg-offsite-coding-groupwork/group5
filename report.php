@@ -15,7 +15,6 @@ $requestBody = <<<EOF
 }
 EOF;
 $rs = Azure::POST('https://api.cognitive.azure.cn/emotion/v1.0/recognize', $requestBody);
-error_log(var_export($rs, true));
 ?>
 <!DOCTYPE html>
 <html>
